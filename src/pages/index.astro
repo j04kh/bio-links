@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Link from '../components/Link.astro';
+import links from '../links.json';
 ---
 <Layout>
 	<main>
@@ -8,11 +9,7 @@ import Link from '../components/Link.astro';
 		<h1>Joaquín Hernández</h1>
 		<h2>@j04kh</h2>
 		<ul role="list">
-			<Link title="Website" href="https://j04kh.com" />
-			<Link title="Instagram" href="https://instagram.com/j04kh" />
-			<Link title="Twitter" href="https://twitter.com/j04kh" />
-			<Link title="LinkedIn" href="https://linkedin.com/in/j04kh" />
-			<Link title="Github" href="https://github.com/j04kh" />
+			{	links.map(link => <Link title={link.title} href={link.href} color={link.color} />) }
 		</ul>
 	</main>
 </Layout>
@@ -20,8 +17,8 @@ import Link from '../components/Link.astro';
 <style>
 	.avatar {
 		border-radius: 100%;
-		width: 130px;
-		height: 130px;
+		width: 120px;
+		height: 120px;
 	}
 	 main {
 		box-sizing: border-box;
