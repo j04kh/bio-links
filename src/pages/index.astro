@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Link from '../components/Link.astro';
+---
+<Layout>
+	<main>
+		<img src="https://pbs.twimg.com/profile_images/1526667850311684102/NgaeZCu0_400x400.jpg" class="avatar" alt="Avatar" />
+		<h1>Joaquín Hernández</h1>
+		<h2>@j04kh</h2>
+		<ul role="list">
+			<Link title="Website" href="https://j04kh.com" />
+			<Link title="Instagram" href="https://instagram.com/j04kh" />
+			<Link title="Twitter" href="https://twitter.com/j04kh" />
+			<Link title="Linkedin" href="https://linkedin.com/in/j04kh" />
+			<Link title="Github" href="https://github.com/j04kh" />
+		</ul>
+	</main>
+</Layout>
+
+<style>
+	.avatar {
+		border-radius: 100%;
+		width: 130px;
+		height: 130px;
+	}
+	 main {
+		box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    padding: 4rem 3rem;
+    background-color: #18181b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #f3f4f6;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+	h1 {
+		font-weight: 500;
+		font-size: 1.4rem;
+		margin-top: 1rem;
+	}
+	h2 {
+		font-weight: 300;
+		font-size: 0.85rem;
+		margin:0;
+	}
+
+	ul{
+		padding: 0;
+	}
+</style>
