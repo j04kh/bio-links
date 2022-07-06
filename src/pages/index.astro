@@ -11,7 +11,7 @@ import Link from '../components/Link.astro';
 			<Link title="Website" href="https://j04kh.com" />
 			<Link title="Instagram" href="https://instagram.com/j04kh" />
 			<Link title="Twitter" href="https://twitter.com/j04kh" />
-			<Link title="Linkedin" href="https://linkedin.com/in/j04kh" />
+			<Link title="LinkedIn" href="https://linkedin.com/in/j04kh" />
 			<Link title="Github" href="https://github.com/j04kh" />
 		</ul>
 	</main>
@@ -28,11 +28,12 @@ import Link from '../components/Link.astro';
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    padding: 4rem 3rem;
+    padding: 0 3rem;
     background-color: #18181b;
     display: flex;
     flex-direction: column;
     align-items: center;
+		justify-content: center;
     text-align: center;
     color: #f3f4f6;
     font-family: 'Montserrat', sans-serif;
@@ -40,7 +41,7 @@ import Link from '../components/Link.astro';
 
 	h1 {
 		font-weight: 500;
-		font-size: 1.4rem;
+		font-size: 1.25rem;
 		margin-top: 1rem;
 	}
 	h2 {
@@ -51,5 +52,7 @@ import Link from '../components/Link.astro';
 
 	ul{
 		padding: 0;
+		width: 90%;
+		max-width: 400px;
 	}
 </style>
