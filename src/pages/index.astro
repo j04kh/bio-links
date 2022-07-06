@@ -7,11 +7,16 @@ import links from '../links.json';
 	<main>
 		<img src="https://pbs.twimg.com/profile_images/1526667850311684102/NgaeZCu0_400x400.jpg" class="avatar" alt="Avatar" />
 		<h1>Joaquín Hernández</h1>
-		<h2>@j04kh</h2>
+		<h2>💻 🛩</h2>
 		<ul role="list">
-			{	links.map(link => <Link title={link.title} href={link.href} color={link.color} />) }
+			{	links.map(link => <Link title={link.title} href={link.href} />) }
 		</ul>
+		
 	</main>
+	<footer>
+		<h2>@j04kh</h2>
+	</footer>
+	 
 </Layout>
 
 <style>
@@ -20,12 +25,13 @@ import links from '../links.json';
 		width: 120px;
 		height: 120px;
 	}
+
 	 main {
 		box-sizing: border-box;
     width: 100%;
     height: 100%;
-    min-height: 100vh;
-    padding: 0 3rem;
+    min-height: calc(100vh - 25px);
+    padding: 4rem 3rem;
     background-color: #18181b;
     display: flex;
     flex-direction: column;
@@ -41,7 +47,21 @@ import links from '../links.json';
 		font-size: 1.25rem;
 		margin-top: 1rem;
 	}
+
+	footer {
+		display: flex;
+		justify-content: center;
+		background-color: #18181b;
+		height: 25px;
+	}
+
+	footer > h2 {
+		font-size: 0.75rem;
+	}
+
 	h2 {
+		color: #f3f4f6;
+    font-family: 'Montserrat', sans-serif;
 		font-weight: 300;
 		font-size: 0.85rem;
 		margin:0;
